@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./Css/Style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Navbar section -->
+    <header>
+      <nav>
+        <div class="nav-logo">
+          <h1>LOGO</h1>
+        </div>
+        <div class="nav-links">
+          <ul id="menu">
+            <li>Features</li>
+            <li>Pricing</li>
+            <li>Community</li>
+            <li>Support</li>
+          </ul>
+        </div>
+        <div class="nav-btn">
+          <i class="fa-solid fa-user"></i>
+          <button class="login">Login</button>
+          <button class="register">Register</button>
+          <i class="fa-solid fa-bars" id="menuicon" onclick="openMenu()"></i>
+          <i
+            class="fa-solid fa-circle-xmark"
+            id="closeicon"
+            onclick="closemenu()"
+          ></i>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Navbar seciton end here -->
+
+    <!-- Hero section -->
+    <hero>
+        <section class="coverimg">
+            <div class="covertext">
+              <h2>The largest Community of photo enthusiasts </h2>
+              <button class="explore">Join Today</button>
+            </div>
+          </section>
+
+          <div class="secondcontainer">
+            <h1>Snap photos ans share like <br> never before </h1>
+            <div class="content">
+                <div>
+                    <h1>Sed ut perspiciatis</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos odio delectus culpa quas iste debitis, corrupti quia molestias quidem facilis magnam dolore at necessitatibus.</p>
+                    <button>Learn more</button>
+                </div>
+                <div>
+                    <h1>Sed ut perspiciatis</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos odio delectus culpa quas iste debitis, corrupti quia molestias quidem facilis magnam dolore at necessitatibus.</p>
+                    <button>Learn more</button>
+                </div>
+            </div>
+            <div class="content">
+                <div>
+                    <h1>Sed ut perspiciatis</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos odio delectus culpa quas iste debitis, corrupti quia molestias quidem facilis magnam dolore at necessitatibus.</p>
+                    <button>Learn more</button>
+                </div>
+                <div>
+                    <h1>Sed ut perspiciatis</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos odio delectus culpa quas iste debitis, corrupti quia molestias quidem facilis magnam dolore at necessitatibus.</p>
+                    <button>Learn more</button>
+                </div>
+            </div>
+           
+            <div>
+
+            </div>
+          </div>
+
+          <div class="thirdcontainer">
+            <div class="txt">
+                <h1>Have you ever posted any photos on social media?</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus, aliquid.</p>
+            </div>
+            <div class="flexcontent">
+                <div class="cont">
+                    <div>
+                        <h1>Sed ut perspiciatis</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quod culpa et harum aspernatur sequi.</p>
+                    </div>
+                    <div>
+                        <h1>Loem ipsum dolor</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quod culpa et harum aspernatur sequi.</p>
+                    </div>
+                    <div>
+                        <h1>Nemo ipsum dolor</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quod culpa et harum aspernatur sequi.</p>
+                    </div>
+                </div>
+                <div class="contimage"> 
+                    <img src="https://media.istockphoto.com/id/1351571961/photo/looking-directly-up-at-the-skyline-of-the-financial-district-in-central-london.jpg?s=612x612&w=0&k=20&c=4J_aWJc5gMATCtIbMkF0dMq4dzz_XjLx5DpwnuPJwkg=" alt="City Skyline">
+                </div>
+            </div>
+        </div>
+        
+
+          <div class="fourthcontainer">
+            <div class="fourthheading">
+                <h1>Ready to take a free trial ?</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem eos ullam ipsa, dolores dignissimos expedita velit qui nostrum ab eveniet.</p>
+            </div>
+
+            <div class="form-container">
+                <h2>Sign up for a free account</h2>
+                <form id="registrationForm">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="firstName" required>
+        
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" name="lastName" required>
+        
+                    <label for="mobile">Mobile Number:</label>
+                    <input type="tel" id="mobile" name="mobile" required pattern="[0-9]{10}" title="Please enter a valid 10-digit mobile number">
+        
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+        
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+        
+                    <label for="confirmPassword">Confirm Password:</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+        
+                    <button type="submit" id="formregister">Register</button>
+                    <div id="error-message" class="error-message"></div>
+                </form>
+            </div>
+          </div>
+          
+          
+    </hero>
+
+    <!-- hero section end here -->
+
+    
+  
+    <!-- Footer section -->
+     
+   
+    <script src="./Javascript/Script.js"></script>
+  </body>
+</html>
